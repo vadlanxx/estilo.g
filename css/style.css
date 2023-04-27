@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Todavia no se cual es la forma correcta de tener un orden en el css, mil disculpas */
+
+body {
+    background-color: #714e9c;
+}
+
+p {
+    font-family: 'Lobster Two', cursive;
+    color: #4c2c72;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    color: #4c2c72;
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+    color: #4c2c72;
+}
+
+footer {
+    background-color: #ede7b1;
+}
+
+.fondo-primario {
+    background-color: #b8b3e9;
+}
+
+
+/* index--------------------------------------------------------------------------- */
+
+.header__estilo{
+    color: #1b0338;
+}
+.menu__estilo{
+    justify-content: space-evenly;
+}
+.menu__links{
+    gap: 5rem;
+}
+.menu__links li{
+    color: #e9e2a0;
+    justify-content: space-evenly;
+    
+}
+.bg-custom{
+    background-color: #4c2c72;
+}
+.navbar-nav .nav-link{
+    color: #e9e2a0;
+    background-color: #4c2c72;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    display: inline;
+}
+
+.nav-item:hover .nav-link{
+    color: #4c2c72;
+    background-color: #e9e2a0;
+    border: 1px solid #714e9c;
+    border-radius: 4px;
+    transition: .3s;
+    display: inline;
+}
+
+
+
+/* primera parte ############### */
+
+
+.container1{
+    background-color: #4c2c72;
+}
+.container1 h1 {
+    background-color: #ede7b1;
+    margin-top: 3rem;
+    width: auto;
+    text-align: center;
+    border: 2px solid #4c2c72;
+}
+.conteinerInd1{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "none none imagen info"
+    ;
+    
+}
+.imgHome1 {
+    width: 300px;
+    grid-area: imagen;
+    border-top : 4px solid #714e9c;
+    border-left: 4px solid #1b0338;
+}
+
+.tamanio2{
+    background-color: #b8b3e9;
+    grid-area: info;
+    width: 300px;
+    padding: 1rem;
+    text-align: center;
+    border-bottom : 4px solid #714e9c;
+    border-right: 4px solid #1b0338;
+    border-radius: 3px;
+
+}
+.tamanio2 h2::after{
+    content: '🤍';
+}
+
+/* fin de primera parte ############### */
+
+
+
+/* segunda parte############ */
+.container2 {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 2rem;
+    padding: 3rem;
+
+
+}
+
+.imgHome2 {
+    width: 100%;
+}
+
+.cartita {
+    flex: 1;
+    background-color: #e9e2a0;
+    border: 2px solid #4c2c72;
+    border-radius: 7px;
+    text-align: center;
+}
+.cartitaInfo {
+    padding: 2rem;
+}
+.cartitaInfo h2{
+    margin: 1rem;
+}
+
+/* terecera parte ########## */
+.titulo3 {
+    background-color: #e9e2a0;
+    border-top: 2px solid #4c2c72;
+    display: flex;
+    justify-content: center;
+}
+
+.mapa,
+iframe {
+    background-color: #e9e2a0;
+    width: 100%;
+}
+
+.container4 {
+    margin-bottom: 7rem;
+}
+
+/* cuarta parte---footer para todas las paginas ########## */
+.titulo4 {
+    width: auto;
+    text-align: center;
+}
+
+.footer1 {
+    background-color: #ede7b1;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1rem;
+}
+.footer1 a {
+    font-family: 'Lobster Two', cursive;
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 7px;
+}
+.contendedorNavFooter{
+    text-align: center;
+}
+.icons img{
+    width: 30px;
+    height: 30px;
+    margin: 4px;
+}
+.icons{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+/* servicios -----------------------------------------------------------------------------*/
+.servicios{
+    max-width: 1114px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1b0338;
+}
+
+.servicios hr{
+    width: 40%;
+    margin: 0.5rem;
+
+}
+.servicios1{
+    display: flex;
+}
+
+.infoServicios{
+    flex: 1;
+    
+}
+.infoServicios li{
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+}
+.imgServicios img{
+    width: auto;
+    height: 300px;
+    border: 1rem solid #714e9c;
+    border-radius: 4px;
+}
+.serviciosE{
+    background-color: #e9e2a0;
+    padding: 2rem;
+}
+.serviciosP{ 
+    color: #e9e2a0;
+    padding: 2rem;
+}
+.serviciosP h1{
+    color: #e9e2a0;
+}
+.estilosS:hover{
+    transform: scale(1.04);
+
+}
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+}
+
+
+/* turnos -----------------------------------------------------------------------------*/
+
+/* contactos----------------------------------------------------------------------- */
+.contactoFirst {
+    display: flex;
+}
+
+.contactoFirst>* {
+    flex: 1;
+}
+
+.contactosA {
+    width: auto;
+    background-color: aqua;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
+.imgConatcto {
+    width: 25rem;
+    height: 15rem;
+}
+
+
+
+
+/* valoracion----------------------------------------------------------------------------- */
+
+.imgValoracion1 {
+    width: 20rem;
+    height: 15rem;
+}
+
+.imgValoracion2 {
+    width: 20rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* pruebas */
+.containerHeader {
+    background-color: #4c2c72;
+    width: auto;
+    height: 10rem;
+}
+
+/* .cartita {
+    background-color: #ede7b1;
+    border: 1px solid #4c2c72;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+} */
+.infoNosotros {
+    display: none;
+    background-color: #e9e2a0;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+
+@media (max-width: 900px) {
+    .imgHome1 {
+        display: none;
+    }
+
+    .conteinerInd1 {
+        display: none;
+    }
+
+    .infoNosotros {
+        display: block;
+    }
+
+    .container2>* {
+        flex-grow: 1;
+    }
+
+    .container2 {
+        flex-direction: column;
+    }
+    .imgServicios{
+        display: none;
+    }
+}
+
+
