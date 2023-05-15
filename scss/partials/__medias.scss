@@ -1,21 +1,19 @@
-
-
-
 @media (max-width: $mediaEstandar ) {
 
     .conteiner__homeInfo {
         display: none;
     }
-    .container__uno{
-        h1{
-            
+
+    .container__uno {
+        h1 {
+
             background-color: $violeta;
             color: $amarillo;
             width: auto;
             text-align: center;
         }
     }
-    
+
     .info__Nosotros {
         display: block;
     }
@@ -38,6 +36,13 @@
 
     .contactos__img {
         display: none;
+    }
+    .contactos__container {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+    .contacto__First{
+        animation: none;
     }
 
     .footer__contacto {

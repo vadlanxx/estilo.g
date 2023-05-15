@@ -583,6 +583,13 @@ footer {
   .contactos__img {
     display: none;
   }
+  .contactos__container {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .contacto__First {
+    animation: none;
+  }
   .footer__contacto {
     position: fixed;
     bottom: 0;
