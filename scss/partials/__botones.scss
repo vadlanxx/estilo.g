@@ -1,0 +1,15 @@
+@mixin boton ($background-color, $color, $margin) {
+    background-color: $background-color;
+    color: $color;
+    margin: $margin;
+    padding: 2px;
+    border-style: none;
+    &:hover {
+    opacity: 0.8;
+    }
+}
+
+
+
+
+

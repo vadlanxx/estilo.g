@@ -1,0 +1,57 @@
+.servicios__fondo {
+    background-image: radial-gradient(ellipse, $violeta , $violeta, $amarillo )
+}
+.servicios__general {
+    max-width: 1114px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right,#1b0338,$violeta,#601db380 );
+    .servicios__P {
+        color: $claroAmarillo;
+        padding: 2rem;
+        &--diferente {
+            background-image: linear-gradient(to right,$amarillo,#9764da, $fondo);
+            padding: 2rem;
+        }
+        h1 {
+            color: $claroAmarillo;
+        }
+    }
+    .servicios__s:hover {
+        transform: scale(1.04);
+    }
+    .servicios hr {
+        width: 40%;
+        margin: 0.5rem;
+    }
+    .servicios1 {
+        display: flex;
+        .infoServicios {
+            flex: 1;
+            li {
+                list-style-type: none;
+                justify-content: space-evenly;
+                padding-top: 2rem;
+            }
+        }
+        .imgServicios{
+            img {
+            width: auto;
+            height: 300px;
+            border: 1rem solid $fondo;
+            border-radius: 4px;
+            }
+        }
+    }
+}
+
+.carousel__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel__item {
+    position: relative;
+    display: none;
+}

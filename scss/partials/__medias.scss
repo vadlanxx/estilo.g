@@ -1,0 +1,49 @@
+
+
+
+@media (max-width: $mediaEstandar ) {
+
+    .conteiner__homeInfo {
+        display: none;
+    }
+    .container__uno{
+        h1{
+            
+            background-color: $violeta;
+            color: $amarillo;
+            width: auto;
+            text-align: center;
+        }
+    }
+    
+    .info__Nosotros {
+        display: block;
+    }
+
+    .container__dos>* {
+        flex-grow: 1;
+    }
+
+    .container__dos {
+        flex-direction: column;
+    }
+
+    .imgServicios {
+        display: none;
+    }
+
+    .turnos__ContenedorF {
+        flex-wrap: wrap;
+    }
+
+    .contactos__img {
+        display: none;
+    }
+
+    .footer__contacto {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,75 @@
+.fondo__valoracion{
+    background-image: linear-gradient(to bottom, $violeta, aqua , $amarillo);
+}
+.valoracion__contenedor {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    .valoracion__titulo {
+        margin-top: 2rem;
+        color: $claroAmarillo;
+        font-size: medium;
+    }
+
+    .valoracion__linea {
+        width: 70%;
+        color: $amarillo;
+    }
+
+    .valoracion__corazones {
+        text-align: center;
+        color: $violeta;
+        padding: 1rem;
+        margin: 2rem;
+        background-image: linear-gradient(to right, $amarillo, $violeta);
+
+        i {
+            width: auto;
+            &:hover,
+            &:focus {
+
+                &:nth-child(-n + 5),
+                &:nth-child(-n + 0)~i {
+                    color: $lila;
+                }
+            }
+        }
+    }
+    .img__Valoracion {
+        width: 20rem;
+        padding: 3px;
+        background-image: radial-gradient(ellipse, transparent 80%, $amarillo );
+        border-radius: 2px;
+    }
+}
+.valoracion__contenedor * {
+    flex: 1;
+}
+
+.valoracion__resenia {
+    background-color: transparent;
+    text-align: center;
+    .resenia__titulo{
+        h1{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        textarea{
+            padding: 10px;
+            width: 100%;
+            background-color: $claroAmarillo;
+            border-style: none;
+            border: 2px solid $violeta;
+            outline: none;
+        }
+    }
+    .resenia__boton{
+        text-align: end;
+        margin-top: 5px;
+        input{
+            @include boton($violeta, $amarillo, 1rem);
+        }
+    }
+}
+

@@ -1,0 +1,18 @@
+.container__tres {
+    padding-bottom: 7rem;
+    background-image: linear-gradient(to top, $amarillo, $violeta 50%);
+    .mapa__home {
+        background-color: $violeta;
+        background-image: radial-gradient(circle, $violeta  , $lila );
+        border-top: 2px solid $violeta;
+        display: flex;
+        justify-content: center;
+        h2{
+            color: $amarillo
+        }
+    }
+    iframe {
+        background-color: $amarillo;
+        width: 100%;
+    } 
+}

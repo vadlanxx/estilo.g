@@ -1,0 +1,73 @@
+.pie__general {
+    .pie__titulo {
+        width: auto;
+        text-align: center;
+    }
+
+    .pie__links {
+        .contendedor__NavFooter {
+            text-align: center;
+
+            a {
+                font-family: 'Lobster Two', cursive;
+                color: black;
+                list-style-type: none;
+                text-decoration: none;
+                margin: 7px;
+            }
+        }
+    }
+
+    .icons__footer {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding: 1rem;
+
+        &--uno {
+            &:hover {
+                animation-name: girar;
+                animation-duration: 3s;
+            }
+        }
+
+        &--dos {
+            &:hover {
+                animation-name: girar;
+                animation-duration: 3s;
+            }
+
+        }
+
+        &--tres {
+            &:hover {
+                animation-name: girar;
+                animation-duration: 3s;
+            }
+        }
+
+        &--cuatro {
+            &:hover {
+                animation-name: girar;
+                animation-duration: 3s;
+            }
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+            margin: 4px;
+        }
+    }
+}
+
+@keyframes girar {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}

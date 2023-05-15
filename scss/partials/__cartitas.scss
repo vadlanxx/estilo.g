@@ -1,0 +1,30 @@
+.container__dos {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 2rem;
+    padding: 3rem;
+    padding-top: 4rem;
+    .cartita {
+        flex: 1;
+        background-color: $amarillo;
+        border: 2px solid $violeta;
+        border-radius: 7px;
+        text-align: center;
+        .img__HomeCartitas {
+            width: 100%;
+        }
+        .cartita__Info {
+        padding: 2rem;
+            h2{
+                margin: 1rem;
+            } 
+        }
+        
+    }
+}
+.fondo__home{
+    background-image: linear-gradient(to bottom, $amarillo 50%, $violeta)
+}
+

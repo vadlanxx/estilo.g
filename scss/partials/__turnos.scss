@@ -1,0 +1,80 @@
+
+.turnos__ContenedorSec{
+    background-image: linear-gradient(to bottom, $violeta 50%, $amarillo );
+}
+.turnos__Contenedor{
+    padding-bottom: 5rem;
+    background-color: transparent;
+
+    .turnos__ContenedorF{
+        display: flex;
+        padding-top: 4rem;
+        gap: 3rem;
+        .turnos__Estilo{
+            background-image: linear-gradient(to right, $claroAmarillo, #bd46ec85);
+            width: 100%;
+            padding: 10px;
+            
+            .turnos__Titulos{
+                font-family: 'Lobster', cursive;
+                background-color: $violeta;
+                color: $amarillo;
+                border: 2px solid $amarillo;
+                border-radius: 4px;
+                padding: 5px;
+                text-align: center;
+            }
+        }
+    }
+    .turnos__ContenedorS{
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+        
+        .turnos__Mensaje{
+            width: 100%;
+            padding: 1rem;
+            margin-top: 2rem;
+            
+            textarea{
+                padding: 10px;
+                border-style: none;
+                width: 100%;
+                color: $violeta;
+                background-color: #c8a1e2;
+                &:focus{
+                    outline: none;
+                    border: 4px solid $violeta;
+                }
+                
+            }
+        }
+        .turnos__Titulos{
+            font-family: 'Lobster', cursive;
+            background-image: linear-gradient(to right, $claroAmarillo, #bd46ec85);
+            color: $amarillo;
+            border: 2px solid $claroAmarillo;
+            border-radius: 4px;
+            padding: 5px;
+            text-align: center;
+        }
+    }
+    .turnos__cartita{
+        margin-left: 1rem;
+        color: $amarillo;
+        display: inline-block;
+        background-color: #39144e;
+        position: absolute;
+        &::before{
+            content: '💥';
+        }
+    }
+    .turnos__Boton{
+        text-align: end;
+        input{
+            @include boton($violeta, $amarillo, 1rem);
+
+        }
+        
+    }
+}

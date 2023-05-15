@@ -1,0 +1,57 @@
+.container__uno {
+    background-color: $violeta;
+    background-image: linear-gradient(to top, $amarillo  , $violeta 90% );
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    h1 {
+        color: $amarillo;
+        width: auto;
+        text-align: center;
+    }
+}
+
+.conteiner__homeInfo {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "none none imagen info"
+    ;
+
+    .img__homeInfo {
+        width: 300px;
+        grid-area: imagen;
+        border-top: 4px solid $fondo;
+        border-left: 4px solid #1b0338;
+    }
+
+
+    .info__Home {
+        background-color: $lila;
+        grid-area: info;
+        width: 300px;
+        padding: 1rem;
+        text-align: center;
+        border-bottom: 4px solid $fondo;
+        border-right: 4px solid #1b0338;
+        border-radius: 3px;
+
+        h2::after {
+            content: '🤍';
+        }
+
+    }
+}
+
+.info__Nosotros {
+    display: none;
+    background-color: $amarillo;
+    margin-top: 3rem;
+    padding: 2rem;
+}
