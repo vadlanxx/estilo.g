@@ -583,12 +583,10 @@ footer {
   .contactos__img {
     display: none;
   }
-  .contactos__container {
-    opacity: 1 !important;
-    transform: none !important;
-  }
-  .contacto__First {
-    animation: none;
+  .contacto__First .contactos__container {
+    margin: 10px;
+    opacity: 1;
+    transform: none;
   }
   .footer__contacto {
     position: fixed;
