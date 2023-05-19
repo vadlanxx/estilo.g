@@ -1,96 +1,110 @@
-.contactos__fondo{
+.contactos__fondo {
     background-image: linear-gradient(to bottom, $lila, $violeta, $amarillo)
 }
+
 .contacto__First {
     padding: 3rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 300px;
-    .contactos__container{
+
+    .contactos__container {
         margin-top: 4rem;
-        .contactos__info{
+        .contactos__info {
             background-color: $lila;
             padding: 1rem;
             border: 3px dotted $violeta;
             text-align: center;
-            legend{
+            animation-name: flip-horizontal-fwd ;
+
+            legend {
                 font-family: 'Lobster', cursive;
                 color: $violeta;
             }
-            .contactos__numero{
-                p{
-                    a{
+
+            .contactos__numero {
+                p {
+                    a {
                         color: $amarillo;
                     }
                 }
             }
-            .contactos__consultas{
-                .contactos__nombre{
-                    input{
+
+            .contactos__consultas {
+                .contactos__nombre {
+                    input {
                         background-color: $amarillo;
                         padding: 3px;
-                        &:focus{
+
+                        &:focus {
                             outline: none;
                             border: 2px solid $violeta;
                         }
                     }
                 }
-                
-                .contactos__input{
-                    .contactos__email{
-                        input{
+
+                .contactos__input {
+                    .contactos__email {
+                        input {
                             background-color: $amarillo;
                             padding: 3px;
                             margin: 15px;
                             border-style: none;
-                            &:focus{
+
+                            &:focus {
                                 outline: none;
                                 border: 2px solid $violeta;
                             }
-                            
-                        
+
+
                         }
                     }
-                    .contactos__texto{
-                        textarea{
+
+                    .contactos__texto {
+                        textarea {
                             background-color: $amarillo;
                             padding: 3px;
-                            &:focus{
+
+                            &:focus {
                                 outline: none;
                                 border: 2px solid $violeta;
                             }
                         }
                     }
-                    .contactos__boton{
+
+                    .contactos__boton {
                         text-align: end;
                         margin-top: 5px;
-                        input{
+
+                        input {
                             @include boton($violeta, $amarillo, 1rem);
                         }
                     }
                 }
 
-                }
             }
         }
     }
+}
 
-.contactos__img{
+.contactos__img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
     justify-items: end;
-    .img__contac{
-        &--uno{
+
+    .img__contac {
+        &--uno {
             animation-name: derecha;
             animation-duration: 2s;
             animation-direction: reverse;
             animation-timing-function: ease;
             grid-column: 1/2;
-            grid-row:1/2;
+            grid-row: 1/2;
         }
-        &--dos{
+
+        &--dos {
             animation-name: izquierda;
             animation-duration: 2s;
             animation-direction: reverse;
@@ -98,17 +112,19 @@
             grid-column: 2/3;
             grid-row: 2/3;
         }
-        &--tres{
+
+        &--tres {
             grid-column: 1/2;
             grid-row: 3/4;
             animation-name: derecha;
             animation-duration: 2s;
             animation-direction: reverse;
-        
+
         }
     }
 
 }
+
 .img__Contacto {
     border: 2px dotted $amarillo;
     width: 25rem;
@@ -116,15 +132,33 @@
 }
 
 @keyframes derecha {
-    0%{ transform: translate(0px);
+    0% {
+        transform: translate(0px);
     }
-    50%{ transform: translate(200px)}
-    
-    100%{transform: translate(300px); }
+
+    50% {
+        transform: translate(200px)
+    }
+
+    100% {
+        transform: translate(300px);
+    }
 }
+
 @keyframes izquierda {
-    0%{ transform: translate(-0px);}
-    50%{ transform: translate(-200px);
-    padding: 3rem;}
-    100%{transform: translate(-300px); }
+    0% {
+        transform: translate(-0px);
+    }
+
+    50% {
+        transform: translate(-200px);
+        padding: 1rem;
+    }
+
+    100% {
+        transform: translate(-300px);
+    }
 }
+
+
+

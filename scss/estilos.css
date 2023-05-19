@@ -16,7 +16,7 @@ h1 {
   color: #4c2c72;
 }
 
-h2 {
+h2, h3 {
   font-family: "Lobster", cursive;
   color: #4c2c72;
 }
@@ -55,15 +55,10 @@ footer {
   display: inline;
 }
 
-.nav__item:hover {
-  transition: 0.5s;
-}
 .nav__item:hover .menu__navLinks {
   color: #4c2c72;
   background-color: #ede7b1;
-  border: 1px solid #714e9c;
   border-radius: 4px;
-  display: inline;
 }
 
 .container__uno {
@@ -131,6 +126,7 @@ footer {
   border: 2px solid #4c2c72;
   border-radius: 7px;
   text-align: center;
+  box-shadow: 4px 4px 4px #4c2c72;
 }
 .container__dos .cartita .img__HomeCartitas {
   width: 100%;
@@ -144,6 +140,10 @@ footer {
 
 .fondo__home {
   background-image: linear-gradient(to bottom, #ede7b1 50%, #4c2c72);
+}
+
+.accordion__cajitas {
+  display: none;
 }
 
 .container__tres {
@@ -373,6 +373,7 @@ footer {
   padding: 1rem;
   border: 3px dotted #4c2c72;
   text-align: center;
+  animation-name: flip-horizontal-fwd;
 }
 .contacto__First .contactos__container .contactos__info legend {
   font-family: "Lobster", cursive;
@@ -475,7 +476,7 @@ footer {
   }
   50% {
     transform: translate(-200px);
-    padding: 3rem;
+    padding: 1rem;
   }
   100% {
     transform: translate(-300px);
@@ -556,6 +557,14 @@ footer {
 }
 
 @media (max-width: 900px) {
+  .menu__estilo .menu__links {
+    gap: 1rem;
+  }
+  .menu__estilo .menu__links .nav__item:hover .menu__navLinks {
+    color: rgba(111, 66, 194, 0.9333333333);
+    background-color: transparent;
+    border: none;
+  }
   .conteiner__homeInfo {
     display: none;
   }
@@ -574,6 +583,15 @@ footer {
   .container__dos {
     flex-direction: column;
   }
+  .cartita {
+    background-image: linear-gradient(to top, #b8b3e9, #ede7b1);
+  }
+  .cartita .cartita__Info .info__cartitas {
+    display: none;
+  }
+  .cartita .cartita__Info .accordion__cajitas {
+    display: block;
+  }
   .imgServicios {
     display: none;
   }
@@ -588,9 +606,11 @@ footer {
     opacity: 1;
     transform: none;
   }
-  .footer__contacto {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  .valoracion__contenedor .valoracion__info {
+    text-align: center;
+  }
+  .valoracion__contenedor .valoracion__info h1 {
+    margin-left: 1rem;
+    text-align: start;
   }
 }/*# sourceMappingURL=estilos.css.map */

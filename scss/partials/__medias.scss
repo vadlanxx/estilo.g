@@ -1,29 +1,51 @@
 @media (max-width: $mediaEstandar ) {
+    .menu__estilo{
+        .menu__links{
+            gap: 1rem;
+            .nav__item{
+                &:hover{
+                    .menu__navLinks{
+                        color: #6f42c2ee;
+                        background-color: transparent;
+                        border: none;
+                    }
+                }
+            }
+        }
+        
+    }
 
     .conteiner__homeInfo {
         display: none;
     }
-
     .container__uno {
         h1 {
-
             background-color: $violeta;
             color: $amarillo;
             width: auto;
             text-align: center;
         }
     }
-
     .info__Nosotros {
         display: block;
     }
-
     .container__dos>* {
         flex-grow: 1;
     }
-
     .container__dos {
         flex-direction: column;
+    }
+
+    .cartita{
+        background-image: linear-gradient(to top, $lila, $amarillo);
+        .cartita__Info{
+            .info__cartitas{
+                display: none;
+            }
+            .accordion__cajitas{
+                display: block;
+            }
+        }
     }
 
     .imgServicios {
@@ -45,11 +67,13 @@
         transform: none;
         }
     }
-
-    .footer__contacto {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
+    .valoracion__contenedor{
+        .valoracion__info{
+            text-align: center;
+            h1{
+                margin-left: 1rem;
+                text-align: start;
+            }
+        }
     }
-
 }

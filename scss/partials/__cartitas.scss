@@ -12,6 +12,7 @@
         border: 2px solid $violeta;
         border-radius: 7px;
         text-align: center;
+        box-shadow: 4px 4px 4px $violeta;
         .img__HomeCartitas {
             width: 100%;
         }
@@ -27,4 +28,6 @@
 .fondo__home{
     background-image: linear-gradient(to bottom, $amarillo 50%, $violeta)
 }
-
+.accordion__cajitas{
+    display: none;
+}

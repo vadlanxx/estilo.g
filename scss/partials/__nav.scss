@@ -5,16 +5,20 @@
 .menu__estilo {
     justify-content: center;
     padding: 1rem;
+
     .menu__links {
         gap: 5rem;
-        .nav__item{
-            .activo{
+
+        .nav__item {
+            .activo {
                 color: $lila;
             }
         }
+
         li {
             color: $amarillo;
             justify-content: center;
+
             a {
                 color: $amarillo;
                 background-color: $violeta;
@@ -26,14 +30,12 @@
     }
 }
 
-
-.nav__item:hover  {
-    transition: .5s;
-    .menu__navLinks{
-    color: $violeta;
-    background-color: $amarillo;
-    border: 1px solid $fondo;
-    border-radius: 4px;
-    display: inline;
+.nav__item {
+    &:hover {
+        .menu__navLinks {
+            color: $violeta;
+            background-color: $amarillo;
+            border-radius: 4px;
+        }
     }
 }
