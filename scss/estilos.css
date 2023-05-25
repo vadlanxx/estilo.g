@@ -408,18 +408,18 @@ footer {
   outline: none;
   border: 2px solid #4c2c72;
 }
-.contacto__First .contactos__container .contactos__info .contactos__consultas .contactos__input .contactos__boton {
+.contacto__First .contactos__container .contactos__info .contactos__consultas .contactos__boton {
   text-align: end;
   margin-top: 5px;
 }
-.contacto__First .contactos__container .contactos__info .contactos__consultas .contactos__input .contactos__boton input {
+.contacto__First .contactos__container .contactos__info .contactos__consultas .contactos__boton input {
   background-color: #4c2c72;
   color: #ede7b1;
   margin: 1rem;
   padding: 2px;
   border-style: none;
 }
-.contacto__First .contactos__container .contactos__info .contactos__consultas .contactos__input .contactos__boton input:hover {
+.contacto__First .contactos__container .contactos__info .contactos__consultas .contactos__boton input:hover {
   opacity: 0.8;
 }
 
